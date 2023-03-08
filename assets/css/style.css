@@ -25,11 +25,14 @@ footer {
     left: 0;
     z-index: 999;
     background-color: #282828;
+    padding: 0 7px;
 }
 
 
 /* ----- SIDEBAR ----- */
-.icone {
+
+/* icone */
+nav ul .icone {
     height: 20px;
     width: 20px;
 }
@@ -45,7 +48,7 @@ nav #bottom-sidebar {
 }
 #bottom-sidebar > .icone:first-child {
     width: 13px;
-    height: 13x;
+    height: 13px;
     margin: 0 auto;
 }
 #bottom-sidebar > .icone:last-child  svg{
@@ -56,7 +59,7 @@ nav #bottom-sidebar {
 /* ----- MAIN ----- */
 
 /* -- Header -- */
-#header-main {
+main #header-main {
     width: 100%;
     height: 60px;
     position: sticky;
@@ -66,11 +69,11 @@ nav #bottom-sidebar {
     background-color: rgba(0, 0, 0, 0.3);
 }
 /* button upgrade */
-#upgrade {
+main #header-main #upgrade {
     width: 150px;
     height: 30px;
     margin: 0 10px 0 auto;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 20px;
     font-size: 8px;
     font-weight: 1000;
@@ -79,39 +82,57 @@ nav #bottom-sidebar {
 }
 
 /* -- Body -- */
-#container-body-main {
-    margin: 10px;
+main #container-body-main {
+    margin: 15px 10px;
 }
-/* categorie */
-#categorie ul .categoria a {
+
+/* Categorie */
+main #container-body-main #categorie ul li a {
     font-size: 8px;
     font-weight: 1000;
     text-align: center;
     color: #707277
 }
-/* playlist */
-.nome-lista {
-    width: 120px;
-    height: 40px;
-    margin: 20px 0;
-    background-color: antiquewhite;
+main #container-body-main #categorie ul li > hr {
+    margin: 2px auto 0;
+    width: 40%;
+    border: 1px solid #9be52d;
 }
-.lista-playlist {
+
+/* Playlist */
+main #container-body-main section .nome-lista {
+    margin: 20px 0;
+}
+main #container-body-main section .lista-playlist {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
 }
-.playlist {
+main #container-body-main section .lista-playlist .playlist {
     flex-basis: 48%;
-    aspect-ratio: 1;
-    background-color: dodgerblue;
+}
+
+/* Playlist - Titolo */
+main #container-body-main section .lista-playlist .playlist h3 {
+    font-size: 12px;
+    font-weight: 1000;
+    margin-top: 15px;
+}
+/* Playlist - Sottotitolo */
+main #container-body-main section .lista-playlist .playlist h4,
+main #container-body-main section .nome-lista h4 {
+    font-size: 10px;
+    font-weight: 1000;
+    margin-top: 5px;
+    color: #717478;
+}
+/* Playlist - Artisti */
+main #container-body-main #artisti .lista-playlist .playlist img {
+    border-radius: 50%;
 }
 
 /* ----- FOOTER ----- */
-footer {
-    padding: 0 7px;
-}
 
 /* left */
 #left-footer {
