@@ -31,6 +31,12 @@
 .jt-cont-sp-between {
     justify-content: space-between;
 }
+.r-gap-25 {
+    row-gap: 25px;
+}
+.c-gap-15 {
+    column-gap: 15px;
+}
 .gap-10 {
     gap: 10px;
 }
