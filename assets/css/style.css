@@ -6,7 +6,7 @@
 }
 
 nav {
-    width: 40px;
+    width: 35px;
     height: calc(100vh - 60px);
     position: relative;
     top: 0;
@@ -16,7 +16,7 @@ nav {
 }
 
 main {
-    width: calc(100% - 40px);
+    width: calc(100% - 35px);
     height: calc(100vh - 60px);
     background-color: lightgreen;
     overflow-x: hidden;
@@ -99,4 +99,30 @@ nav #bottom-sidebar {
     flex-basis: 48%;
     aspect-ratio: 1;
     background-color: dodgerblue;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    padding: 0 7px;
+}
+
+/* left */
+#left-footer {
+    width: 80px;
+    height: 40px;
+    background-color: tomato;
+}
+
+/* center */
+#center-footer {
+    width: 120px;
+    height: 40px;
+    background-color: violet;
+}
+
+/* right */
+#right-footer {
+    width: 80px;
+    height: 40px;
+    background-color: darkturquoise;
 }
