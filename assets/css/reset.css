@@ -1,0 +1,119 @@
+/* REGOLE GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-d-column {
+    flex-direction: column;
+}
+.al-it-center {
+    align-items: center;
+}
+.jt-cont-center {
+    justify-content: center;
+}
+.al-jus-center {
+    justify-content: center;
+    align-items: center;
+}
+.jt-cont-sp-between {
+    justify-content: space-between;
+}
+.gap-10 {
+    gap: 10px;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-30 {
+    gap: 30px;
+}
+.gap-40 {
+    gap: 40px;
+}
+
+/* List */
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* Position */
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+}
+
+/* Immagini */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Font */
+.txt-left {
+    text-align: left;
+}
+.font-3em {
+    font-size: 3em;
+}
+.font-1_5em {
+    font-size: 1.5em;
+}
+.font-0_8em {
+    font-size: 0.8em;
+}
+.font-0_7em {
+    font-size: 0.7em;
+}
+
+/* Display */
+.inline-block {
+    display: inline-block;
+}
+.display-none {
+    display: none;
+}
+
+/* Width */
+.w-90 {
+    width: 90%;
+}
+.w-70 {
+    width: 70%;
+}
+.w-30 {
+    width: 30%;
+}
+
+/* Backgrounds Colors */
+.bg-white {
+    background-color: white;
+}
+
+/* Colors */
+.c-white {
+    color: white;
+}
+
+/* Button */
+.button {
+    padding: 10px 45px;
+    border-radius: 20px;
+}
