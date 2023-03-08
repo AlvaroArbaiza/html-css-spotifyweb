@@ -1,3 +1,5 @@
+/* LAYOUTS */
+
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -27,4 +29,22 @@ footer {
     left: 0;
     z-index: 999;
     background-color: darkviolet;
+}
+
+
+/* SIDEBAR */
+.icone {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+}
+
+/* top */
+nav #top-sidebar {
+    flex-basis: 110px;
+}
+
+/* bottom */
+nav #bottom-sidebar {
+    flex-basis: 70px;
 }

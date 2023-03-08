@@ -25,6 +25,9 @@
     justify-content: center;
     align-items: center;
 }
+.jt-cont-sp-around {
+    justify-content: space-around;
+}
 .jt-cont-sp-between {
     justify-content: space-between;
 }
