@@ -10,6 +10,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+
     <title>Spotify WebApp</title>
 </head>
 <body>
@@ -298,10 +301,10 @@
 
         </main>
 
-        <!-- footer -->
+        <!-- FOOTER -->
         <footer class="flex al-it-center jt-cont-sp-between c-white">
 
-            <!-- left -->
+            <!-- Left -->
             <div id="left-footer" class="flex">
 
                 <!-- immagine brano -->
@@ -313,11 +316,15 @@
                 <div id="brano" class="flex wrap">
 
                     <!-- titolo -->
-                    <h4>Sinister</h4>
+                    <a href="#">
+                        <h4>Sinister</h4>
+                    </a>
                     
                     <!-- sottotitoli -->
-                    <h5>Brano</h5>
-                    <h5>Nome</h5>
+                    <a href="#">
+                        <h5>Brano</h5>
+                        <h5>Nome</h5>
+                    </a>
                 </div>
                 
                 <!-- icone -->
@@ -332,11 +339,59 @@
                 
             </div>
 
-            <!-- center -->
-            <div id="center-footer"></div>
+            <!-- Center -->
+            <div id="center-footer" class="flex flex-d-column al-it-center">
+
+                <!-- top - riproduzione -->
+                <div id="top-center-footer" class="flex jt-cont-sp-between al-it-center">
+
+                    <!-- random -->
+                    <i class="fa-solid fa-shuffle"></i>
+
+                    <!-- backward -->
+                    <i class="fa-solid fa-backward-step"></i>
+
+                    <!-- play -->
+                    <i id="play" class="fa-solid fa-play"></i>
+
+                    <!-- forward -->
+                    <i class="fa-solid fa-forward-step"></i>
+
+                    <!-- repeat -->
+                    <i class="fa-solid fa-rotate-right"></i>
+
+                </div>
+
+                <!-- bottom -->
+                <div id="bottom-center-footer" class="txt-center">
+
+                    <!-- tempo di ascolto -->
+                    <span>0&#58;25</span>
+
+                    <!-- barra tempo -->
+                    <input type="range" min="1" max="100">
+
+                    <!-- durata brano -->
+                    <span>4&#58;35</span>
+                </div>
+            </div>
             
-            <!-- right -->
-            <div id="right-footer"></div>
+            <!-- Right -->
+            <div id="right-footer" class="flex jt-cont-sp-between al-it-center">
+
+                <!-- elenco brani -->
+                <div class="flex gap-1">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <!-- device -->
+                <i class="fa-solid fa-display"></i>
+
+                <!-- volume -->
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" min="1" max="100">
+            </div>
         </footer>
     </div>
     
