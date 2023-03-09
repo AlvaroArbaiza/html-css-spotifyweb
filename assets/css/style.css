@@ -46,6 +46,9 @@ nav ul .icone {
 nav #top-sidebar {
     flex-basis: 110px;
 }
+nav #top-sidebar .icone:nth-of-type(1n+2) {
+    opacity: 0.6;
+}
 
 /* Bottom */
 nav #bottom-sidebar {
@@ -55,10 +58,17 @@ nav #bottom-sidebar {
     width: 13px;
     height: 13px;
     margin: 0 auto;
+    opacity: 0.6;
 }
 #bottom-sidebar > .icone:last-child  svg{
     border-radius: 50%;
     background-color: rgb(128, 128, 128);
+}
+
+/* Hover */
+nav #top-sidebar .icone:hover,
+nav #bottom-sidebar .icone:hover  {
+    opacity: 1;
 }
 
 /* ----- MAIN ----- */
@@ -86,6 +96,16 @@ main #header-main #upgrade {
     padding: 9px 0;
 }
 
+/* Hover */
+main #header-main #upgrade:hover {
+    width: 170px;
+    height: 40px;
+    margin: 0 5px 0 auto;
+    font-size: 10px;
+    padding: 11px 0;
+}
+
+
 /* -- Body -- */
 main #container-body-main {
     margin: 15px 10px;
@@ -103,6 +123,10 @@ main #container-body-main #categorie ul li > hr {
     width: 40%;
     border: 1px solid #9be52d;
 }
+/* hover */
+main #container-body-main #categorie ul li:hover a {
+    color: white;
+}
 
 /* Playlist */
 main #container-body-main section .nome-lista {
@@ -116,6 +140,33 @@ main #container-body-main section .lista-playlist {
 }
 main #container-body-main section .lista-playlist .playlist {
     flex-basis: 48%;
+}
+
+/* Playlist - Copertina */
+main #container-body-main section .lista-playlist .playlist .copertina {
+    display: block;
+    color: white;
+}
+main #container-body-main section .lista-playlist .playlist .play-playlist {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* Tasto play */
+main #container-body-main section .lista-playlist .playlist .play-playlist i {
+    width: 65px;
+    height: 65px;
+    font-size: 40px;
+    padding-left: 7px;
+    border: 6px solid white;
+    border-radius: 50%;
+    line-height: 55px;
+}
+/* Tasto play - Hover */
+main #container-body-main section .lista-playlist .playlist .copertina:hover .play-playlist{
+    display: flex;
 }
 
 /* Playlist - Titolo */
@@ -133,9 +184,11 @@ main #container-body-main section .nome-lista h4 {
     color: #717478;
 }
 /* Playlist - Artisti */
-main #container-body-main #artisti .lista-playlist .playlist img {
+main #container-body-main #artisti .lista-playlist .playlist img,
+main #container-body-main #artisti .lista-playlist .playlist .play-playlist {
     border-radius: 50%;
 }
+
 
 /* ----- FOOTER ----- */
 
@@ -149,15 +202,22 @@ footer #left-footer #img-brano {
 footer #left-footer #brano {
     width: 40px;
 }
+/* Brano - Titolo */
 footer #left-footer #brano h4 {
     font-size: 9px;
     font-weight: 1000;
     color: white;
 }
+/* Brano - Sottotitoli */
 footer #left-footer #brano h5 {
     font-size: 8px;
     font-weight: 1000;
     color: #717478;
+}
+/* Brano - Hover */
+footer #left-footer #brano h5:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 /* Icone */
@@ -165,10 +225,15 @@ footer #left-footer #ico-footer {
     width: 20px;
     margin-left: 5px;
     color: #717478;
+    cursor: pointer;
 }
 footer #left-footer #ico-footer i {
     display: block;
     font-size: 12px;
+}
+/* Icone - Hover */
+footer #left-footer #ico-footer i:hover {
+    color: white;
 }
 
 /* -- Center -- */
@@ -186,6 +251,7 @@ footer #center-footer #top-center-footer {
 }
 footer #center-footer #top-center-footer i {
     font-size: 14px;
+    cursor: pointer;
 }
 footer #center-footer #top-center-footer #play {
     width: 24px;
@@ -194,27 +260,43 @@ footer #center-footer #top-center-footer #play {
     border: 3px solid white;
     border-radius: 50%;
     line-height: 19px;
+    margin: 0 2px 4px;
+}
+/* Hover - play */
+footer #center-footer #top-center-footer #play:hover {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    padding: 0 6px;
+    line-height: 22px;
+    margin: 0;
 }
 
 /* Center - bottom */
 footer #center-footer #bottom-center-footer {
     width: 100%;
-    margin: 2px auto 0 auto;
 }
 /* barra tempo */
 footer #center-footer div input[type="range"] {
     width: 70%;
     height: 3px;
     accent-color: white;
-    mix-blend-mode: exclusion;
+}
+/* barra tempo - hover */
+footer #center-footer div input[type="range"]:hover {
+    accent-color: #9be52d;
 }
 
 /* -- Right -- */
 footer #right-footer {
-    width: 100px;
+    width: 110px;
+}
+footer #right-footer a {
+    color: white;
 }
 footer #right-footer i {
     font-size: 10px;
+    cursor: pointer;
 }
 
 /* volume */
@@ -222,4 +304,9 @@ footer #right-footer input[type="range"] {
     width: 50px;
     height: 2px;
     margin-bottom: 3px;
+    accent-color: white;
+}
+/* volume - hover */
+footer #right-footer input[type="range"]:hover {
+    accent-color: #9be52d;
 }
