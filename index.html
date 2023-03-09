@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Spotify WebApp</title>
 </head>
 <body>
@@ -295,10 +299,38 @@
         </main>
 
         <!-- footer -->
-        <footer class="flex al-it-center jt-cont-sp-between">
+        <footer class="flex al-it-center jt-cont-sp-between c-white">
 
             <!-- left -->
-            <div id="left-footer"></div>
+            <div id="left-footer" class="flex">
+
+                <!-- immagine brano -->
+                <div id="img-brano">
+                    <img src="./assets/img/sinister.jpeg" alt="copertina brano sinister">
+                </div>
+                
+                <!-- brano -->
+                <div id="brano" class="flex wrap">
+
+                    <!-- titolo -->
+                    <h4>Sinister</h4>
+                    
+                    <!-- sottotitoli -->
+                    <h5>Brano</h5>
+                    <h5>Nome</h5>
+                </div>
+                
+                <!-- icone -->
+                <div id="ico-footer" class="flex wrap">
+                    
+                    <!-- preferiti -->
+                    <i class="fa-regular fa-heart"></i>
+
+                    <!-- album -->
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+                
+            </div>
 
             <!-- center -->
             <div id="center-footer"></div>
