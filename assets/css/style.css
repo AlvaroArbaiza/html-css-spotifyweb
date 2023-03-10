@@ -519,6 +519,25 @@ footer #right-footer input[type="range"]:hover {
     main.s {
         width: calc(100% - 150px);
     }
+
+    /* FOOTER */
+
+    /* -- Left -- */
+
+    /* Brano */
+    footer #left-footer #brano {
+        width: 60px;
+    }
+    /* Titolo */
+    footer #left-footer #brano #titolo {
+        display: flex;
+        align-items: end;
+    }
+    /* Sottotitolo */
+    footer #left-footer #brano #sottotitolo-footer {
+        flex-direction: row;
+        gap: 3px;
+    }
 }
 
 /* TABLET Responsive da width: 768px */
@@ -539,20 +558,6 @@ footer #right-footer input[type="range"]:hover {
 
     /* -- Left -- */
 
-    /* Brano */
-    footer #left-footer #brano {
-        width: 60px;
-    }
-    /* Titolo */
-    footer #left-footer #brano #titolo {
-        display: flex;
-        align-items: end;
-    }
-    /* Sottotitolo */
-    footer #left-footer #brano #sottotitolo-footer {
-        flex-direction: row;
-        gap: 3px;
-    }
     /* Icone */
     footer #left-footer #ico-footer {
         width: 30px;
