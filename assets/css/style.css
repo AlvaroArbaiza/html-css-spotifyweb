@@ -402,6 +402,56 @@ footer #right-footer input[type="range"]:hover {
     accent-color: #9be52d;
 }
 
+
+/* ------ BONUS ------ */
+
+/* DISPOSITIVO MOBILE (min-width: 320px e max-width: 375px) CON: 
+   - Scomparsa icone superflue 
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+    /* FOOTER */
+
+    /* -- Left -- */
+    footer #left-footer {
+        width: 110px;
+    }
+    /* Icone */
+    footer #left-footer #ico-footer {
+        display: none;
+    }
+
+    /* -- Center -- */
+
+    /* Top */
+    footer #center-footer #top-center-footer {
+        width: 120px;
+    }
+    footer #center-footer #top-center-footer i {
+        font-size: 10px;
+    }
+    /* play */
+    footer #center-footer #top-center-footer #play {
+        padding-left: 6px;
+    }
+
+    /* Bottom */
+    footer #center-footer div input[type="range"] {
+        width: 60%;
+    }
+
+    /* -- Right -- */
+    footer #right-footer {
+        justify-content: flex-end;
+        gap: 5px;
+    }
+    footer #right-footer .xxs {
+        display: none;
+    }
+}
+
+
 /* -------- RESPONSIVE -------- */
 
 /* MOBILE LARGE Responsive da width: 425px */
@@ -535,3 +585,4 @@ footer #right-footer input[type="range"]:hover {
     }
     
 }
+
