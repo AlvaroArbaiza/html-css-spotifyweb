@@ -523,3 +523,15 @@ footer #right-footer input[type="range"]:hover {
         width: 130px;
     }
 }
+
+/* DESKTOP Responsive da width: 1024px */
+@media only screen and (min-width: 1024px) {
+    
+    /* MAIN */
+
+    /* Playlist */
+    main #container-body-main section .lista-playlist .playlist {
+        flex-basis: calc((100% / 6) - 2%);
+    }
+    
+}
