@@ -401,6 +401,7 @@ footer #right-footer input[type="range"]:hover {
     accent-color: #9be52d;
 }
 
+/* -------- RESPONSIVE -------- */
 
 /* MOBILE LARGE Responsive da width: 425px */
 @media only screen and (min-width: 425px) {
@@ -467,4 +468,20 @@ footer #right-footer input[type="range"]:hover {
     main.s {
         width: calc(100% - 150px);
     }
+}
+
+/* TABLET Responsive da width: 768px */
+@media only screen and (min-width: 768px) {
+
+    /* MAIN */
+
+    /* Playlist */
+    main #container-body-main section .lista-playlist {
+        justify-content: flex-start;
+        gap: 10px 2%;
+    }
+    main #container-body-main section .lista-playlist .playlist {
+        flex-basis: calc((100% / 4) - 2%);
+    }
+
 }
