@@ -12,6 +12,7 @@ nav {
     left: 0;
     z-index: 999;
     background-color: rgb(0, 0, 0);
+    overflow: hidden;
 }
 
 main {
@@ -41,16 +42,17 @@ nav ul .icone {
     width: 20px;
 }
 
-/* Top */
+/* --- Top --- */
 nav #top-sidebar {
     gap: 5px;
     margin-top: 5px;
 }
-nav #top-sidebar .icone:nth-of-type(1n+2) {
+nav #top-sidebar .icone:nth-of-type(1n+2) .container-icone {
     opacity: 0.6;
 }
+
 /* nome icona - compare da width: 425px in poi */
-#top-sidebar .icone .nome-icona {
+#top-sidebar .icone .container-icone .nome-icona {
     display: none;
     font-size: 9px;
     font-weight: 800;
@@ -58,26 +60,105 @@ nav #top-sidebar .icone:nth-of-type(1n+2) {
     color: white;
     cursor: pointer;
 }
+/* marker-line */
+#top-sidebar .icone .marker-line {
+    display: none;
+    height: 100%;
+    border-left: 3px solid #9be52d;
+    left: -10px;
+    top: 0;
+    opacity: 1;
+}
 
-/* Bottom */
+/* Playlist - compare da (width: 425px) in poi */
+.playlist-sdbar {
+    display: none;
+}
+#top-sidebar .playlist-sdbar a {
+    color: white;
+    opacity: 0.7;
+}
+/* titolo */
+#top-sidebar .playlist-sdbar > h3 {
+    margin-top: 10px;
+}
+/* Crea playlist */
+#top-sidebar #crea-playlist {
+    margin-bottom: 10px;
+}
+#top-sidebar #crea-playlist a i.fa-plus {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background-color: white;
+    opacity: 0.7;
+}
+#top-sidebar #crea-playlist a h3 {
+    margin-left: 3px;
+    vertical-align: middle;
+}
+/* Nome playlist */
+#top-sidebar #nome-playlist h4 {
+    font-size: 8px;
+}
+/* Nome playlist - scrollbar ----------------------------- */
+/* #top-sidebar #nome-playlist ul {
+    overflow-x: hidden;
+    overflow-y: auto;
+} */
+
+/* Top - Bottom  h3 */
+#top-sidebar .playlist-sdbar h3,
+#bottom-sidebar #profile h3 {
+    font-size: 9px;
+    font-weight: 1000;
+}
+
+/* --- Bottom --- */
 nav #bottom-sidebar {
     flex-basis: 70px;
 }
-#bottom-sidebar > .icone:first-child {
-    width: 13px;
-    height: 13px;
-    margin: 0 auto;
-    opacity: 0.6;
+
+/* download */
+#bottom-sidebar #download {
+    opacity: 0.7;
 }
-#bottom-sidebar > .icone:last-child svg{
+#bottom-sidebar #download a{
+    display: block;
+    width: 13px;
+    margin: 0 auto;
+}
+#bottom-sidebar #download #inst-app {
+    color: white;
+    font-size: 8px;
+}
+#bottom-sidebar #download hr {
+    width: 90%;
+    border-top: 1px white;
+    opacity: 0.7;
+
+}
+
+/* profile */
+#bottom-sidebar #profile a svg {
     border-radius: 50%;
     background-color: rgb(128, 128, 128);
 }
+#bottom-sidebar #profile div {
+    vertical-align: super;
+}
 
-/* Hover */
-nav #top-sidebar .icone:hover,
-nav #bottom-sidebar .icone:hover  {
+/* --- HOVER --- */
+nav #top-sidebar .icone:hover .container-icone,
+nav #top-sidebar .playlist-sdbar a:hover,
+nav #bottom-sidebar #download:hover {
     opacity: 1;
+}
+nav #top-sidebar .icone2:hover #marker-home {
+    display: none;
 }
 
 /* ----- MAIN ----- */
@@ -268,7 +349,7 @@ footer #center-footer #top-center-footer #play {
     padding: 0 5px;
     border: 3px solid white;
     border-radius: 50%;
-    line-height: 19px;
+    line-height: 20px;
     margin: 0 2px 4px;
 }
 /* Hover - play */
@@ -311,7 +392,7 @@ footer #right-footer i {
 /* volume */
 footer #right-footer input[type="range"] {
     width: 50px;
-    height: 2px;
+    height: 3px;
     margin-bottom: 3px;
     accent-color: white;
 }
@@ -352,8 +433,15 @@ footer #right-footer input[type="range"]:hover {
     #top-sidebar.s-sdbar > .icone:first-child {
         width: 70%;
     }
+    #top-sidebar .icone .marker-line {
+        display: block;
+    }
+    /* playlist */
+    .playlist-sdbar {
+        display: block;
+    }
     /* nome icona */
-    #top-sidebar .icone .nome-icona {
+    #top-sidebar .icone .container-icone .nome-icona {
         display: inline-block;
     }
     
@@ -363,6 +451,16 @@ footer #right-footer input[type="range"]:hover {
     }
     #bottom-sidebar.s-sdbar > .icone:first-child {
         margin: 0;
+    }
+    #bottom-sidebar.s-sdbar div.s-sdbar {
+        display: inline-block;
+    }
+    #bottom-sidebar #download a{
+        display: inline-block;
+        vertical-align: sub;
+    }
+    #bottom-sidebar #download hr {
+        display: block;
     }
 
     /* MAIN */
