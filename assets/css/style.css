@@ -31,18 +31,18 @@ footer {
     left: 0;
     z-index: 999;
     background-color: #282828;
-    padding: 0 7px;
+    padding: 0 5px;
 }
 
 
-/* ----- SIDEBAR ----- */
+/* ---------- SIDEBAR ---------- */
 
 /* icone */
 nav ul .icone {
     width: 20px;
 }
 
-/* --- Top --- */
+/* ----- Top ----- */
 nav #top-sidebar {
     gap: 5px;
     margin-top: 5px;
@@ -104,11 +104,6 @@ nav #top-sidebar .icone:nth-of-type(1n+2) .container-icone {
 #top-sidebar #nome-playlist h4 {
     font-size: 8px;
 }
-/* Nome playlist - scrollbar ----------------------------- */
-/* #top-sidebar #nome-playlist ul {
-    overflow-x: hidden;
-    overflow-y: auto;
-} */
 
 /* Top - Bottom  h3 */
 #top-sidebar .playlist-sdbar h3,
@@ -117,7 +112,7 @@ nav #top-sidebar .icone:nth-of-type(1n+2) .container-icone {
     font-weight: 1000;
 }
 
-/* --- Bottom --- */
+/* ----- Bottom ----- */
 nav #bottom-sidebar {
     flex-basis: 70px;
 }
@@ -161,9 +156,9 @@ nav #top-sidebar .icone2:hover #marker-home {
     display: none;
 }
 
-/* ----- MAIN ----- */
+/* ---------- MAIN ---------- */
 
-/* -- Header -- */
+/* ----- Header ----- */
 main #header-main {
     width: 100%;
     height: 60px;
@@ -196,24 +191,37 @@ main #header-main #upgrade:hover {
 }
 
 
-/* -- Body -- */
+/* ----- Body ----- */
 main #container-body-main {
     margin: 15px 10px;
 }
 
 /* Categorie */
+main #container-body-main #categorie {
+    margin-bottom: 4px;
+}
+main #container-body-main #categorie ul li {
+    position: relative;
+}
 main #container-body-main #categorie ul li a {
     font-size: 8px;
     font-weight: 1000;
     text-align: center;
     color: #707277
 }
-main #container-body-main #categorie ul li > hr {
-    margin: 2px auto 0;
+/* Categorie - marker-line */
+main #container-body-main #categorie ul li > .marker-header-main {
+    display: none;
+    position: absolute;
     width: 40%;
+    left: 50%;
+    transform: translate( -50%, 5px);
     border: 1px solid #9be52d;
 }
-/* hover */
+main #container-body-main #categorie ul li > #marker-evidenza {
+    display: block;
+}
+/* Categorie - HOVER */
 main #container-body-main #categorie ul li:hover a {
     color: white;
 }
@@ -244,7 +252,7 @@ main #container-body-main section .lista-playlist .playlist .play-playlist {
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
-/* Tasto play */
+/* Copertina - Tasto play */
 main #container-body-main section .lista-playlist .playlist .play-playlist i {
     width: 65px;
     height: 65px;
@@ -254,7 +262,7 @@ main #container-body-main section .lista-playlist .playlist .play-playlist i {
     border-radius: 50%;
     line-height: 55px;
 }
-/* Tasto play - Hover */
+/* Tasto play - HOVER */
 main #container-body-main section .lista-playlist .playlist .copertina:hover .play-playlist{
     display: flex;
 }
@@ -265,6 +273,7 @@ main #container-body-main section .lista-playlist .playlist h3 {
     font-weight: 1000;
     margin-top: 15px;
 }
+
 /* Playlist - Sottotitolo */
 main #container-body-main section .lista-playlist .playlist h4,
 main #container-body-main section .nome-lista h4 {
@@ -273,6 +282,7 @@ main #container-body-main section .nome-lista h4 {
     margin-top: 5px;
     color: #717478;
 }
+
 /* Playlist - Artisti */
 main #container-body-main #artisti .lista-playlist .playlist img,
 main #container-body-main #artisti .lista-playlist .playlist .play-playlist {
@@ -280,9 +290,9 @@ main #container-body-main #artisti .lista-playlist .playlist .play-playlist {
 }
 
 
-/* ----- FOOTER ----- */
+/* ---------- FOOTER ---------- */
 
-/* -- Left -- */
+/* ----- Left ----- */
 
 /* Brano */
 footer #left-footer #img-brano {
@@ -304,7 +314,7 @@ footer #left-footer #brano h5 {
     font-weight: 1000;
     color: #717478;
 }
-/* Brano - Hover */
+/* Brano - HOVER */
 footer #left-footer #brano h5:hover {
     text-decoration: underline;
     color: white;
@@ -321,12 +331,12 @@ footer #left-footer #ico-footer i {
     display: block;
     font-size: 12px;
 }
-/* Icone - Hover */
+/* Icone - HOVER */
 footer #left-footer #ico-footer i:hover {
     color: white;
 }
 
-/* -- Center -- */
+/* ----- Center ----- */
 
 footer #center-footer {
     width: 40%;
@@ -335,7 +345,7 @@ footer #center-footer span {
     font-size: 7px;
 }
 
-/* Center - top */
+/* Center - Top */
 footer #center-footer #top-center-footer {
     width: 140px;
 }
@@ -343,7 +353,7 @@ footer #center-footer #top-center-footer i {
     font-size: 14px;
     cursor: pointer;
 }
-/* play */
+/* Play */
 footer #center-footer #top-center-footer #play {
     width: 24px;
     height: 24px;
@@ -353,7 +363,7 @@ footer #center-footer #top-center-footer #play {
     line-height: 20px;
     margin: 2px 2px 2px;
 }
-/* Hover - play */
+/* Play - HOVER */
 footer #center-footer #top-center-footer #play:hover {
     width: 28px;
     height: 28px;
@@ -363,7 +373,7 @@ footer #center-footer #top-center-footer #play:hover {
     margin: 0;
 }
 
-/* Center - bottom */
+/* Center - Bottom */
 footer #center-footer #bottom-center-footer {
     width: 100%;
 }
@@ -373,14 +383,15 @@ footer #center-footer div input[type="range"] {
     height: 3px;
     accent-color: white;
 }
-/* Hover - Barra tempo */
+/* Barra tempo - HOVER */
 footer #center-footer div input[type="range"]:hover {
     accent-color: #9be52d;
 }
 
-/* -- Right -- */
+/* ----- Right ----- */
 footer #right-footer {
     width: 110px;
+    margin-left: 5px;
 }
 footer #right-footer a {
     color: white;
@@ -390,69 +401,20 @@ footer #right-footer i {
     cursor: pointer;
 }
 
-/* volume */
+/* Volume */
 footer #right-footer input[type="range"] {
-    width: 50px;
+    width: 70px;
     height: 3px;
-    margin-bottom: 3px;
     accent-color: white;
 }
-/* volume - hover */
+/* Volume - HOVER */
 footer #right-footer input[type="range"]:hover {
     accent-color: #9be52d;
 }
 
 
-/* ------ BONUS ------ */
 
-/* DISPOSITIVO MOBILE (min-width: 320px e max-width: 375px) CON: 
-   - Scomparsa icone superflue 
-*/
-
-@media only screen and (min-width: 320px) and (max-width: 375px) {
-
-    /* FOOTER */
-
-    /* -- Left -- */
-    footer #left-footer {
-        width: 110px;
-    }
-    /* Icone */
-    footer #left-footer #ico-footer {
-        display: none;
-    }
-
-    /* -- Center -- */
-
-    /* Top */
-    footer #center-footer #top-center-footer {
-        width: 120px;
-    }
-    footer #center-footer #top-center-footer i {
-        font-size: 10px;
-    }
-    /* play */
-    footer #center-footer #top-center-footer #play {
-        padding-left: 6px;
-    }
-
-    /* Bottom */
-    footer #center-footer div input[type="range"] {
-        width: 60%;
-    }
-
-    /* -- Right -- */
-    footer #right-footer {
-        justify-content: flex-end;
-        gap: 5px;
-    }
-    footer #right-footer .xxs {
-        display: none;
-    }
-}
-
-
-/* -------- RESPONSIVE -------- */
+/* ------------- RESPONSIVE ------------- */
 
 /* MOBILE LARGE Responsive da width: 425px */
 @media only screen and (min-width: 425px) {
@@ -485,7 +447,8 @@ footer #right-footer input[type="range"]:hover {
     #top-sidebar.s-sdbar > .icone:first-child {
         width: 70%;
     }
-    #top-sidebar .icone .marker-line {
+    /* markerline - home*/
+    #top-sidebar .icone #marker-home {
         display: block;
     }
     /* playlist */
@@ -560,7 +523,7 @@ footer #right-footer input[type="range"]:hover {
 
     /* Icone */
     footer #left-footer #ico-footer {
-        width: 30px;
+        width: 40px;
         margin-left: 30px;
         justify-content: space-between;
         align-items: center;
@@ -575,19 +538,118 @@ footer #right-footer input[type="range"]:hover {
 
     /* -- Right -- */
     footer #right-footer {
-        width: 130px;
+        width: 150px;
+    }
+    footer #right-footer #ico-right-footer {
+        flex-direction: row;
+        gap: 15px;
+    }
+    /* volume */
+    footer #right-footer i.fa-volume-high {
+        margin: 0 5px 0 15px;
+    }
+    footer #right-footer input[type="range"] {
+        width: 80px;
     }
 }
 
 /* DESKTOP Responsive da width: 1024px */
 @media only screen and (min-width: 1024px) {
     
+    /* SIDEBAR */
+
+    /* -- Top -- */
+
+    /* markerline - home*/
+    #top-sidebar .icone #marker-home {
+        display: none;
+    }
+    /* marker-line - Hover */
+    #top-sidebar .icone .container-icone:hover + .marker-line {
+        display: block !important;
+    }
+
     /* MAIN */
+
+    /* Categorie - marker-evidenza */
+    main #container-body-main #categorie ul li > #marker-evidenza {
+        display: none;
+    }
+    /* Marker-line - Hover */
+    main #container-body-main #categorie ul li a:hover + .marker-header-main {
+        display: block !important;
+    }
 
     /* Playlist */
     main #container-body-main section .lista-playlist .playlist {
         flex-basis: calc((100% / 6) - 2%);
     }
     
+    /* FOOTER */
+
+    /* -- Left -- */
+
+    /* Icone */
+    footer #left-footer #ico-footer {
+        width: 40px;
+    }
+
+    /* -- Right -- */
+
+    footer #right-footer {
+        width: 170px;
+    }
+    /* volume */
+    footer #right-footer input[type="range"] {
+        width: 100px;
+    }
 }
 
+/* ----------- BONUS RESPONSIVE ----------- */
+
+/* DISPOSITIVO MOBILE (min-width: 320px e max-width: 375px) CON: 
+   - Scomparsa icone superflue 
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+    /* FOOTER */
+
+    /* -- Left -- */
+    footer #left-footer {
+        width: 110px;
+    }
+    /* Icone */
+    footer #left-footer #ico-footer {
+        display: none;
+    }
+
+    /* -- Center -- */
+
+    /* Top */
+    footer #center-footer #top-center-footer {
+        width: 120px;
+    }
+    footer #center-footer #top-center-footer i {
+        font-size: 10px;
+    }
+    /* play */
+    footer #center-footer #top-center-footer #play {
+        padding-left: 6px;
+        line-height: 19px;
+    }
+
+    /* Bottom */
+    footer #center-footer div input[type="range"] {
+        width: 60%;
+    }
+
+    /* -- Right -- */
+    footer #right-footer {
+        justify-content: flex-end;
+        gap: 5px;
+    }
+    footer #right-footer .xxs {
+        display: none;
+    }
+}

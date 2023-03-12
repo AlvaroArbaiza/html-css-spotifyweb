@@ -41,6 +41,9 @@
 .gap-1 {
     gap: 1px;
 }
+.gap-5 {
+    gap: 5px;
+}
 .gap-10 {
     gap: 10px;
 }
@@ -105,6 +108,9 @@ img {
 }
 .display-none {
     display: none;
+}
+.display-block {
+    display: block;
 }
 
 /* Width */

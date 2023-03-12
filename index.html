@@ -60,7 +60,7 @@
                 </li>
 
                 <!-- search -->
-                <li class="icone">
+                <li class="icone relative">
 
                     <div class="container-icone">
 
@@ -73,10 +73,13 @@
                         </div>
                     </div>
 
+                    <!-- marker-line -->
+                    <div class="marker-line absolute "></div>
+
                 </li>
 
                 <!-- libreria -->
-                <li class="icone">
+                <li class="icone relative">
 
                     <div class="container-icone">
 
@@ -88,6 +91,9 @@
                             <h3>La tua libreria</h3>
                         </div>
                     </div>
+
+                    <!-- marker-line -->
+                    <div class="marker-line absolute "></div>
                     
                 </li>
 
@@ -110,6 +116,26 @@
                 <!-- Nome playlist -->
                 <li id="nome-playlist" class="s-sdbar playlist-sdbar">
                     <ul class="flex flex-d-column gap-20">
+                        <li>
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h4>Nome Playlist</h4>
+                            </a>
+                        </li>
                         <li>
                             <a href="#">
                                 <h4>Nome Playlist</h4>
@@ -200,46 +226,52 @@
                 <section id="categorie">
 
                     <ul class="flex wrap jt-cont-center r-gap-25 c-gap-15">
+                        
                         <li class="categoria">
                             <a href="#">
                                 <h3>IN EVIDENZA</h3>
                             </a>
-                            <hr>
+                            <hr id="marker-evidenza" class="marker-header-main">
                         </li>
 
                         <li class="categoria">
                             <a href="#">
                                 <h3>PODCAST</h3>
                             </a>
+                            <hr class="marker-header-main">
                         </li>
 
                         <li class="categoria">
                             <a href="#">
                                 <h3>CLASSIFICHE</h3>
                             </a>
+                            <hr class="marker-header-main">
                         </li>
 
                         <li class="categoria">
                             <a href="#">
                                 <h3>GENERI E MOOD</h3>
                             </a>
+                            <hr class="marker-header-main">
                         </li>
 
                         <li class="categoria">
                             <a href="#">
                                 <h3>NUOVE USCITE</h3>
                             </a>
+                            <hr class="marker-header-main">
                         </li>
 
                         <li class="categoria">
                             <a href="#">
                                 <h3>SCOPRI</h3>
                             </a>
+                            <hr class="marker-header-main">
                         </li>
                     </ul>
                 </section>
 
-                <!----- playlists ----->
+                <!---------- playlists ---------->
 
                 <!-- recently played -->
                 <section>
@@ -562,20 +594,25 @@
             <!-- Right -->
             <div id="right-footer" class="flex jt-cont-sp-between al-it-center">
 
-                <!-- elenco brani -->
-                <a href="#" class="flex gap-1 xxs">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                    <i class="fa-solid fa-bars"></i>
-                </a>
+                <div id="ico-right-footer" class="flex flex-d-column gap-5">
 
-                <!-- device -->
-                <a class="flex xxs" href="#">
-                    <i class="fa-solid fa-display"></i>
-                </a>
+                    <!-- elenco brani -->
+                    <a href="#" class="flex gap-1 xxs">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+
+                    <!-- device -->
+                    <a class="flex xxs" href="#">
+                        <i class="fa-solid fa-display"></i>
+                    </a>
+                </div>
+                
 
                 <!-- volume -->
                 <i class="fa-solid fa-volume-high"></i>
                 <input type="range" min="1" max="100">
+
             </div>
         </footer>
     </div>
